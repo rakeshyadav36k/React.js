@@ -34,7 +34,7 @@ function App() {
   }, [password])
 
 
-  useEffect(() => {
+  useEffect(() => {   // useEffect hook is used to perform side effects in your functional components, such as fetching data, subscribing to external events, or manually changing the DOM.
     passwordGenerator()
   }, [length, numberAllowed, charAllowed, setPassword])
 
