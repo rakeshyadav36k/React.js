@@ -27,7 +27,7 @@ function App() {
   }, [length, numberAllowed, charAllowed, setPassword])
 
 
-  const copyPasswordToClipboard = useCallback(() => {     // 
+  const copyPasswordToClipboard = useCallback(() => {     // React useCallback() is a hook that memoizes a function definition and ensures its referential integrity between re-renders of a React component.
     passwordRef.current?.select();
     passwordRef.current?.setSelectionRange(0, 999);
     window.navigator.clipboard.writeText(password)
