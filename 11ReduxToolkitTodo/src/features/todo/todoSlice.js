@@ -10,8 +10,8 @@ function Todos() {
     <>
     <div>Todos</div>
     
-    <ul className="list-none">
-        {todos.map((todo) => (
+    <ul className="list-none"> 
+        {todos.map((todo) => (   // updating the todo list
           <li
             className="mt-4 flex justify-between items-center bg-zinc-800 px-4 py-2 rounded"
             key={todo.id}
